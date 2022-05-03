@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(25,25,25,255);
+    background-image: url("images/bg3.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.upper-sect{
+    background: black;
+    color: white;
+}
+
+
+.upper-sect .header-data{
+    padding: 30px 0;
+}
+
+.upper-sect h4, .upper-sect h2{
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-data{
+    margin: 0 70px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img{
+    width: 70px;
+    border-radius: 20px;
+}
+
+.lower-sect{
+    background: #1c1c1c;
+    color: white;
+}
+.lower-sect::after{
+    display: block;
+    background-color: black;
+    height: 5px;
+    content: "";
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.lower-sect .header-data{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.lower-sect .header-data p{
+    margin-left: auto;
+}
+
+
+.nav-bar li{
+    margin: 0 15px;
+}
+
+.about-me{
+    color: white;
+    max-height: 500px;
+    align-items: center;
+}
+
+.about-me .main{
+    display: grid;
+    row-gap: 50px;
+    text-align: center;
+    margin: 150px 600px;
+}
+
+.about-me .main h1{
+    font-size: 72px;
+}
+
+.about-me .main h4{
+    font-size: 20px;
+}
+
+.about-me .main p{
+    font-size: 15px;
+}
+
+.pricing-head{
+	width: 100%;
+	margin-top: 70px;
+	padding-bottom: 70px;
+}
+
+.pricing-head h1{
+	text-align: center;
+	color: #000000;
+	font-size: 45pt;
+}
+
+.pricing-head h1::after{
+	display: block;
+	content: "";
+	background: #7239BE;
+	height: 4px;
+	width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pricing-grid{
+	padding-top: 30px;
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 25px;
+}
+
+.pricing-section{
+	padding: 10% 15%;
+	border-radius: 10px;
+	color: white;
+	background: black;
+	text-align: center;
+}
+
+
+.pricing-section p{
+	font-size: 22px;
+}
+
+.pricing-section h3{
+	font-size: 44px;
+	margin: 15px 0 40px
+}
+
+
+.pricing-section ul{
+	text-align: left;
+	margin: 20px 0 60px;
+	color: #DDDDDD;
+	list-style: none;
+}
+
+.pricing-section li{
+	margin: 20px 0;
+}
+
+.pricing-section ul li::before{
+	content: "\2022";
+	font-weight: bolder;
+	color: white;
+	margin-right: 8px;
+}
+
+.pricing-section .order{
+	width: 100%;
+	padding: 16px 0;
+	background: transparent;
+	border: 1px solid white;
+	border-radius: 10px;
+	color: white;
+	margin-bottom: 20px;
+	font-size: 16px;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+.pricing-section .order:hover{
+	background: white;
+	color: black;
+}
+
+.work img{
+	height: 300px;
+	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+}
+
+.work{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 50px;
+}
+
+.work-grid{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+.contacts{
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	list-style: none;
+	margin: 200px 0 0;
+	position: relative;
+}
+
+
+.contact-me ul li img{
+	height: 100px;
+	display: block;
+	margin: 0;
+	top: 0;
+	cursor: pointer;
+	transition: 0.5s;
+	color: white;
+}
+
+.contact-me ul li a{
+	display: inline-block;
+	margin: 0 15px;
+	text-decoration: none;
+	margin-top: 20px;
+	color: black;
+	cursor: pointer;
+}
+
+
+.contact-me ul li figcaption a:hover::after{
+	width: 100%;
+}
+
+.contact-me ul li a img:hover{
+	margin-top: -10px;
+}
